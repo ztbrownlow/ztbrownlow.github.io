@@ -97,12 +97,26 @@
               </div><!--//item-->
               <hr class="divider" />
               <div class="item row">
+                <div class="col-md-4 col-sm-4 col-xs-12" href="https://www.youtube.com/embed/d3js2WfGgfE" target="_blank">
+                <iframe width="560" height="315" class="img-responsive project-image" src="https://www.youtube.com/embed/d3js2WfGgfE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                  <h3 class="title"><a href="https://www.youtube.com/embed/d3js2WfGgfE" target="_blank">All's Fare in Love and War (GameMaker)</a></h3>
+                  <p>This was a group project made with 3 others for a class where the player is in the role of someone who has been blacklisted by a space cab company and has to make their own way home. The game name, though hopefully it doesn't need to be explained, is a pun on taxi fare and the phrase "All's Fair in Love and War." The gameplay consists of two alternating level schemes, in the structure ABABAB. In the A levels, the game is a platformer where the player must collect spaceship parts. In the B levels, the player flies their spaceship in a scrolling shooter.</p>
+                  
+                  <p>The levels evolve over time as well. Level A1 is just a regular platformer, whereas level A2 has moving platforms and level B3 is a scrolling platformer with automatic horizontal movement. Level B1 has the player only able to dodge. Level B2 gives the player a gun, but is entirely beatable without a gun and is meant to just let the player get the hang of it. Level B3 has enemies that actually require the player to use their gun, and it gives them a one hit shield as well.</p>
+                  
+                  <p>When it comes to division of work, my main responsibility was the programming for the space levels, and I also helped with the plot.</p>
+                  <p><a class="more-link" href="https://drive.google.com/open?id=0B58ZjMdTPsoDbzczY1VtY3lqQ1E" target="_blank"><i class="fa fa-external-link"></i> Download the game </a></p>
+                </div><!--//desc-->
+              </div><!--//item-->
+              <div class="item row">
                 <a class="col-md-4 col-sm-4 col-xs-12" href="https://ztbrownlow.github.io/Sorcery-Engine/index.html" target="_blank">
                 <img class="img-responsive project-image" src="https://i.imgur.com/MfD34UE.jpg" alt="Sorcery" />
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                   <h3 class="title"><a href="https://ztbrownlow.github.io/Sorcery-Engine/index.html" target="_blank">Sorcery Game Engine (JavaScript)</a></h3>
-                  <p>This is a game engine for JavaScript games, made for a class with two other collaborators. The sample games included are Creature Alchemy, Snake, Asteroids, and Cops and Robbers.</p>
+                  <p>This is a game engine for JavaScript games, made for a class with two other collaborators. The sample games included are Creature Alchemy, Snake, Asteroids, and Cops and Robbers. There is full documentation to allow for others to use it as well.</p>
                   <p><a class="more-link" href="https://ztbrownlow.github.io/Sorcery-Engine/index.html" target="_blank"><i class="fa fa-external-link"></i> See the engine in action </a></p>
                 </div><!--//desc-->
               </div><!--//item-->
@@ -112,8 +126,8 @@
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                   <h3 class="title"><a href="https://github.com/ztbrownlow/study" target="_blank">Digital Flash Card Program (Python with TKinter)</a></h3>
-                  <p>I was always too lazy to make flash cards by hand, so I made this program to help me with that. The main reason I made this was because I had a ton of questions/answers to study with that I didn't want to type manually, so I wanted something that would allow for spreadsheet input, and thus this project was born.</p>
-                  <p><a class="more-link" href="https://github.com/ztbrownlow/study" target="_blank"><i class="fa fa-external-link"></i>Check out the Github</a></p>
+                  <p> One time I had to study for a forensics test but I <i>really</i> didn't feel like making flash cards, nor did I feel like taking the list of questions/answers we were given to study from and hand-inputting them all into Quizlet (it was a very long list). Partially to solve that problem and partially to procrastinate, I decided to make my own simplistic flash card program that can read questions and answers from an excel spreadsheet. As a user of my own program, this made it easy to modify the spreadsheet by hand and insert my questions in by just pasting the whole list we were given (after a few formatting changes and corrections).</p>
+                  <p><a class="more-link" href="https://github.com/ztbrownlow/study" target="_blank"><i class="fa fa-external-link"></i>Check out the Github, and feel free to make a pull request</a></p>
                 </div><!--//desc-->
               </div><!--//item-->
               <div class="item row">
@@ -124,6 +138,7 @@
                   <h3 class="title">Game AI - Monster in the Closet (Java with Processing)</h3>
                   <p>This is a simulation that uses a behavior tree, a decision tree, and steering behaviors to have a monster emerge from a closet when it hears a wandering "player" character and chases it. In the video, the player is using a decision tree while the red monster is using a behavior tree. The blue transparent monster runs a learning algorithm where it analyzes data that I've recorded from the red monster and player movements and uses it to create a decision tree of its own. The behavior tree of the blue monster has it spin around in a few circles and then rummage through the dresser until it "hears" the player nearby. Once it does, it chases the player, though if the player gets far enough away it will just wander around. The red monster does a good job of reproducing this behavior, though of course its wander varies since different random numbers are generated for each.</p>
                   <p>In the video, you'll notice that I occasionally show the grid used for pathfinding. In addition, there are a few times where I press the mouse to guide the player, as pressing the mouse will override the player's current action to pathfind to the mouse location. When there is no mouse input, the player will wander and avoid obstacles.</p>
+                  <p>In terms of actual movement, the simulation uses simple steering behaviors as well as a few more complex ones like wander and seek. I also made a Boids flocking simulation, but that was not relevant for this simulation. Perhaps I'll put that up here as well someday soon.</p>
                   <p>Not yet available on GitHub</p>
                 </div><!--//desc-->
               </div><!--//item-->
@@ -133,7 +148,7 @@
                 </div>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                   <h3 class="title">Minesweeper (Python with Pygame)</h3>
-                  <p>This is a version of Minesweeper with customizable themes. The theme shown is one with flowers and bees instead of mines.</p>
+                  <p>This is a version of Minesweeper with customizable themes. The theme shown is one with flowers and bees instead of mines. Gameplay is the exact same as with regular Minesweeper.</p>
                   <p>Not yet available on GitHub</p>
                 </div><!--//desc-->
               </div><!--//item-->
@@ -153,7 +168,7 @@
                 </div>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                   <h3 class="title">Polygonal 3D Rendering Engine (Python with Pygame)</h3>
-                  <p>This is a 3D rendering engine that I decided to make after my circle-based one because I wanted something better. Just for fun, I did all the math by hand instead of using a 3D graphics library or a rasterization technology like OpenGL.</p>
+                  <p>This is a 3D rendering engine that I decided to make after my circle-based one (see below) because I wanted something better. Just for fun, I did all the math by hand instead of using a 3D graphics library or a rasterization technology like OpenGL.</p>
                   <p>Not yet available on GitHub</p>
                 </div><!--//desc-->
               </div><!--//item-->
@@ -163,7 +178,7 @@
                 </div>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                   <h3 class="title">Circle-based 3D Rendering Engine (Python with Pygame)</h3>
-                  <p>This is a pseudo-3D rendering engine made with Python and the Pygame library that I made for a space FPS based off of the old Atari game Star Raiders. I will put a video/picture of that game here when I can. All of the math is done by hand.</p>
+                  <p>This is a pseudo-3D rendering engine made with Python and the Pygame library that I made for a space FPS based off of the old Atari game Star Raiders. I will put a video/picture of that game here when I can access the computer that I have it saved on. All of the math is done by hand.</p>
                   <p>Not yet available on GitHub</p>
                 </div><!--//desc-->
               </div><!--//item-->
