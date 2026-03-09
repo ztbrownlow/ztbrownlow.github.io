@@ -39,7 +39,7 @@
   <!-- ******HEADER****** -->
   <header class="header">
     <div class="container">
-      <img class="profile-image img-responsive pull-left" src="https://media-exp1.licdn.com/dms/image/C4D03AQEGLRFt8_qdng/profile-displayphoto-shrink_400_400/0/1517034587622?e=1617840000&v=beta&t=3BV200M23Tm9ESKoEi4GW5bbWfA6TkzVdKhhkxP1ozM" alt="Zach Brownlow" style="border-radius:50%;width:256px;height:256px;"/>
+      <img class="profile-image img-responsive pull-left" src="https://media.licdn.com/dms/image/v2/C4D03AQEGLRFt8_qdng/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517034588344?e=1774483200&v=beta&t=8lFZPNItYlr3oZ5xXQWLzP0ZXH1PIn1-WZV37dqUj54" alt="Zach Brownlow" style="border-radius:50%;width:256px;height:256px;"/>
       <div class="profile-content pull-left">
         <h1 class="name">Zach Brownlow</h1>
         <h2 class="desc">Software Developer</h2>
@@ -66,20 +66,68 @@
             </div><!--//content-->
           </div><!--//section-inner-->
         </section><!--//section-->
+
+        <section class="latest section">
+          <div class="section-inner">
+            <h2 class="heading">Products I've Worked On: Rec Room</h2>
+            <div class="content">
+              <div class="item row">
+                <p>If you are unfamiliar with Rec Room, it is a cross-platform UGC game that started out on VR but expanded to mobile, non-VR PC, and all major consoles, with weekly updates shipping to all platforms. I've worked on many aspects of the game, but a large part of my responsibilities was working on the official games inside of Rec Room, and I'd like to showcase just a few of those. Apart from these projects that I'm showcasing, however, I've also worked on various other systems, like controls, UI, and UGC tooling. I have also been involved in project management (being the lead engineer for several of these projects) and have been very involved on the game design side as well. </p>
+                <p>In addition, I've written several dev blogs for our UGC community explaining how to use some of the the new UGC tooling we've given them. Here are examples of those dev blogs:</p>
+                <p><a href="https://rec.net/creator/p/pathfinder">Pathfinder</a></p>
+                <p><a href="https://blog.recroom.com/posts/2023/11/29/custom-melee-weapons">Custom Melee Weapons</a></p>
+              </div>
+              <hr class="divider" />
+              <div class="item row">
+                <div class="col-md-4 col-sm-4 col-xs-12" href="https://www.youtube.com/embed/Nh4dc60PRBA" target="_blank">
+                  <iframe width="560" height="315" class="img-responsive project-image" src="https://www.youtube.com/embed/Nh4dc60PRBA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <h1 class="title"><a href="https://rec.net/room/RecRally">Rec Rally</a></h3>
+                <p class="summary"><a href="https://recroom.com/">Rec Room</a></p>
+
+                <p>The first project I worked on at Rec Room was a racing game called Rec Rally. Part of our inspiration for this project and others was finding something that our UGC community couldn't do with our existing tech (in this case, making cars), and giving them the tech to do it wrapped in a new game. For this reason, while the game itself was somewhat barebones, it was also a demo of what creators could do with the new driveable car tech that we were giving them. I specifically worked on the driving logic itself, by implementing boosting and vehicle-environment collisions. Vehicle collisions were an interesting problem to solve, as you have to strike a good balance between collisions feeling realistic and fun, and relying on our game engine's built-in physics engine alone isn't enough for that. </p>
+                <br/>
+                <p><a href="https://rec-room.fandom.com/wiki/Rec_Rally">Fan wiki page for Rec Rally</a></p>
+              </div><!--//item--> 
+              <div class="item row">
+                <div class="col-md-4 col-sm-4 col-xs-12" href="https://www.youtube.com/embed/69ZBZaUH05k" target="_blank">
+                  <iframe width="560" height="315" class="img-responsive project-image" src="https://www.youtube.com/embed/69ZBZaUH05k" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <h1 class="title"><a href="https://rec.net/room/MyLittleMonsters">My Little Monsters</a></h3>
+                <p class="summary"><a href="https://recroom.com/">Rec Room</a></p>
+
+                <p> My Little Monsters is a pet-raising RPG where you get to adopt and raise a baby cryptid! The game consists of three parts - a mysterious forest where you harvest resources, a town where you talk to NPCs and complete quests, and your monster sanctuary where you raise your monsters and customize the environment to your liking. Work on this project involved both writing code in C# for new features and writing game functionality in our in-house visual scripting language. This was a large-scope project, and so I worked on lots of new features, but as a project lead, I was also instrumental in tracking down other bugs in Rec Room itself that could affect our game to ensure we could have as clean a launch as possible.</p>
+                <br/>
+                <p><a href="https://rec-room.fandom.com/wiki/My_Little_Monsters">Fan wiki page for My Little Monsters</a></p>
+              </div><!--//item-->
+              <div class="item row">
+                <div class="col-md-4 col-sm-4 col-xs-12" href="https://www.youtube.com/embed/euXWHGTjxEk" target="_blank">
+                  <iframe width="560" height="315" class="img-responsive project-image" src="https://www.youtube.com/embed/euXWHGTjxEk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <h1 class="title"><a href="https://rec.net/room/MakeItToMidnight">Make It To Midnight</a></h3>
+                <p class="summary"><a href="https://recroom.com/">Rec Room</a></p>
+
+                <p> Make it to Midnight is a 4v1 horror game, partially inspired by Dead by Daylight. Bonky the clown is terrorizing the abandoned carnival, and 4 friends must avoid Bonky and escape the carnival safely. Like My Little Monsters, engineering work on this game was a mixture of C# and working in our in-house visual scripting language. Specific aspects that I worked on included the generator minigame and making Bonky's hammer, which is more complex than it sounds as it was really making the underlying UGC technology that lets players make any melee weapon they want to with extremely customized logic. You can see the dev blog for that melee tech that teaches UGC creators how to use it <a href="https://blog.recroom.com/posts/2023/11/29/custom-melee-weapons">here</a>.</p>
+                <br/>
+                <p><a href="https://rec-room.fandom.com/wiki/Make_It_To_Midnight">Fan wiki page for Make It To Midnight</a></p>
+              </div><!--//item-->  
+            </div><!--//content-->
+          </div><!--//section-inner-->
+        </section><!--//section-->
         
         <section class="latest section">
           <div class="section-inner">
-            <h2 class="heading">Products I've Worked On</h2>
+            <h2 class="heading">Products I've Worked On: Big Huge Games</h2>
             <div class="content">
               <div class="item row">
                 <div class="col-md-4 col-sm-4 col-xs-12" href="https://www.youtube.com/embed/A8EAEhlFXaQ" target="_blank">
                   <iframe width="560" height="315" class="img-responsive project-image" src="https://www.youtube.com/embed/A8EAEhlFXaQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </div>
-                <h1 class="title"><a href="https://play.google.com/store/apps/details?id=com.nexonm.bhgrts.adk&hl=en_US&gl=US">Arcane Showdown</a></h3>
+                <h1 class="title"><a href="https://steamcommunity.com/app/1157560">Arcane Showdown</a></h3>
                 <p class="summary"><a href="https://bighugegames.com/">Big Huge Games</a></p>
 
-                <p>Arcane Showdown is a card-based RTS game that I've worked on at Big Huge Games. I started out on the project during its preproduction phase as an intern and helped ship the game, and once the game had been shipped I became the lead engineer on it. </p>
-                <p>Everything on this game was of course a massive team effort. A large portion of my time spent working on this game went either towards the tech for our FTUE (industry slang for the tutorial) or our Design Tool. In my work on our FTUE, I spent a long time working very closely with designers to make sure the system could do everything that they needed it to and could be easily changed with minimal engineering work. The Design Tool is a web tool we have to allow designers or any other team members to edit JSON configs with fancy UI, and I was responsible for making it so that the tool would be able to automatically generate the UI for any C# class with no extra dev work. </p>
+                <p>Arcane Showdown was a card-based RTS game that I've worked on at Big Huge Games. I started out on the project during its preproduction phase as an intern and helped ship the game, and once the game had been shipped I became the lead engineer on it. </p>
+                <p>Everything on this game was of course a massive team effort. A large portion of my time spent working on this game went either towards the tech for our FTUE (industry slang for the tutorial) or our Design Tool. In my work on our FTUE, I spent a long time working very closely with designers to make sure the system could do everything that they needed it to and could be easily changed with minimal engineering work. The Design Tool is a web tool we have to allow designers or any other team members to edit JSON configs with fancy UI, and I was responsible for making it so that the tool would be able to automatically generate the UI for any C# class with no extra dev work. I was full stack on this project, and worked on the server, client, and both web-based and unity-based tooling. </p>
               </div><!--//item--> 
               <hr class="divider" />
               <div class="item row">
