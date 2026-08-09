@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/ztbrownlow/ztbrownlow.github.io#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "grapesjs": "^0.12.52",
     "jquery": "^3.2.1"
   }
